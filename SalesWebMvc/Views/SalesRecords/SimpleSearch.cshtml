@@ -2,6 +2,8 @@
 
 @{
     ViewData["Title"] = "Simple Search";
+    //DateTime minDate = DateTime.Parse(ViewData["minDate"] as string);
+   // DateTime maxDate = DateTime.Parse(ViewData["maxDate"] as string);
 }
 
 <h2>@ViewData["Title"]</h2>
@@ -12,11 +14,11 @@
             <div class="form-group">
                 <div class="form-group">
                     <label for="minDate">Min Date</label>
-                    <input type="date" class="form-control" name="minDate" value=@ViewData["minDate"]/>
+                    <input type="date" class="form-control" name="minDate" value=@ViewData["minDate"] />
                 </div>
                 <div class="form-group">
                     <label for="maxDate">Max Date</label>
-                    <input type="date" class="form-control" name="maxDate" value=@ViewData["maxDate"]/>
+                    <input type="date" class="form-control" name="maxDate" value=@ViewData["maxDate"] />
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">Filter</button>
